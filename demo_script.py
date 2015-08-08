@@ -17,4 +17,3 @@ im_processing = FaceRecognition(
 )
 
 im_processing.drawFaceRectangles((0,255,255), 1)
-im_processing.showAnalysedImage()
