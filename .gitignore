@@ -5,6 +5,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Python extensions
+*.pyc
+
 # Distribution / packaging
 .Python
 env/
@@ -55,3 +58,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Custom projects files
+.DS_Store
+
