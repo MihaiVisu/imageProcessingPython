@@ -10,4 +10,5 @@ The format of data retrieved is the following:
     "faces": [(x,y,w,h)] set of coordinates representing bottom left and top right corners of squares bounding faces
 }
 ```
+--
 Class is still in development and I am going to add new methods and increase its functionality. Feel free to fork and come with suggestions !
