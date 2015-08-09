@@ -16,20 +16,8 @@ for (startX, startY, endX, endY) in r["faces"]:
     cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
 # show the output image
-cv2.imshow("obama.jpg", image)
-cv2.waitKey(0)
-
-# load our image and now use the face detection API to find faces in
-# images by uploading an image directly
-image = cv2.imread("adrian.jpg")
-payload = {"image": open("adrian.jpg", "rb")}
-r = requests.post(url, files=payload).json()
-print "adrian.jpg: {}".format(r)
-
-# loop over the faces and draw them on the image
-for (startX, startY, endX, endY) in r["faces"]:
-    cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
-
-# show the output image
-cv2.imshow("adrian.jpg", image)
-cv2.waitKey(0)
+if image is not None:
+    cv2.imshow("obama.jpg", image)
+    cv2.waitKey(0)
+else:
+    raise IOError("Image not read.")
