@@ -13,7 +13,7 @@ print "obama.jpg: {}".format(r)
 
 # loop over the faces and draw them on the image
 for (startX, startY, endX, endY) in r["faces"]:
-	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
+    cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
 # show the output image
 cv2.imshow("obama.jpg", image)
@@ -28,7 +28,7 @@ print "adrian.jpg: {}".format(r)
 
 # loop over the faces and draw them on the image
 for (startX, startY, endX, endY) in r["faces"]:
-	cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
+    cv2.rectangle(image, (startX, startY), (endX, endY), (0, 255, 0), 2)
 
 # show the output image
 cv2.imshow("adrian.jpg", image)
